@@ -2,7 +2,7 @@
 
 ---
 
-# Nombre del Proyecto
+# Chat-App
 
 **ChatApp con NestJS**
 
