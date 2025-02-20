@@ -1,99 +1,146 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+¡Por supuesto! Incluir un archivo `README.md` bien estructurado en tu repositorio de GitHub es fundamental para que otros desarrolladores comprendan y utilicen tu proyecto de manera efectiva. A continuación, te proporciono una guía y un ejemplo de cómo podrías estructurar tu `README.md` para tu aplicación de chat desarrollada con NestJS.
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+---
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+# Nombre del Proyecto
 
-## Description
+**ChatApp con NestJS**
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Descripción
 
-## Project setup
+ChatApp es una aplicación de mensajería en tiempo real construida con NestJS. Permite a los usuarios registrarse, iniciar sesión y comunicarse en salas de chat públicas y privadas. La aplicación utiliza WebSockets para una comunicación bidireccional eficiente y en tiempo real.
 
-```bash
-$ npm install
-```
+## Características
 
-## Compile and run the project
+- Registro de usuarios con validación de credenciales.
+- Autenticación y autorización seguras.
+- Salas de chat públicas y privadas.
+- Mensajería en tiempo real utilizando WebSockets.
+- Gestión de perfiles de usuario.
 
-```bash
-# development
-$ npm run start
+## Tecnologías Utilizadas
 
-# watch mode
-$ npm run start:dev
+- [NestJS](https://nestjs.com/): Framework progresivo de Node.js.
+- [TypeScript](https://www.typescriptlang.org/): Lenguaje de programación tipado.
+- [MongoDB](https://www.mongodb.com/): Base de datos NoSQL.
+- [Mongoose](https://mongoosejs.com/): ODM para MongoDB y Node.js.
+- [Socket.IO](https://socket.io/): Biblioteca para comunicaciones en tiempo real.
 
-# production mode
-$ npm run start:prod
-```
+## Requisitos Previos
 
-## Run tests
+Antes de instalar y ejecutar la aplicación, asegúrate de tener instalados los siguientes componentes:
 
-```bash
-# unit tests
-$ npm run test
+- [Node.js](https://nodejs.org/) (versión 14 o superior)
+- [npm](https://www.npmjs.com/) (gestor de paquetes de Node.js)
+- [MongoDB](https://www.mongodb.com/) (instancia en ejecución)
 
-# e2e tests
-$ npm run test:e2e
+## Instalación
 
-# test coverage
-$ npm run test:cov
-```
+Sigue estos pasos para configurar y ejecutar la aplicación en tu entorno local:
 
-## Deployment
+1. **Clona este repositorio:**
 
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
+   ```bash
+   git clone https://github.com/tu-usuario/chatapp-nestjs.git
+   ```
 
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
 
-```bash
-$ npm install -g mau
-$ mau deploy
-```
+2. **Accede al directorio del proyecto:**
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+   ```bash
+   cd chatapp-nestjs
+   ```
 
-## Resources
 
-Check out a few resources that may come in handy when working with NestJS:
+3. **Instala las dependencias:**
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+   ```bash
+   npm install
+   ```
 
-## Support
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+4. **Configura las variables de entorno:**
 
-## Stay in touch
+   Crea un archivo `.env` en la raíz del proyecto con el siguiente contenido:
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+   ```env
+   MONGODB_URI=mongodb://localhost:27017/chatapp
+   JWT_SECRET=tu_secreto_jwt
+   ```
 
-## License
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+   Ajusta `MONGODB_URI` y `JWT_SECRET` según tus necesidades.
+
+5. **Inicia la aplicación:**
+
+   ```bash
+   npm run start:dev
+   ```
+
+
+   La aplicación estará disponible en `http://localhost:3000/`.
+
+## Uso
+
+Una vez que la aplicación esté en funcionamiento, puedes interactuar con ella a través de un cliente HTTP como [Postman](https://www.postman.com/) o mediante la interfaz web integrada.
+
+### Endpoints Principales
+
+- **Registro de Usuario:**
+
+  - **URL:** `POST /auth/register`
+  - **Cuerpo de la Solicitud:**
+
+    ```json
+    {
+      "username": "tu_nombre_de_usuario",
+      "email": "tu_correo@ejemplo.com",
+      "password": "tu_contraseña"
+    }
+    ```
+
+- **Inicio de Sesión:**
+
+  - **URL:** `POST /auth/login`
+  - **Cuerpo de la Solicitud:**
+
+    ```json
+    {
+      "email": "tu_correo@ejemplo.com",
+      "password": "tu_contraseña"
+    }
+    ```
+
+- **Obtener Usuarios Registrados:**
+
+  - **URL:** `GET /users`
+  - **Encabezados:**
+
+    ```json
+    {
+      "Authorization": "Bearer tu_token_jwt"
+    }
+    ```
+
+- **Unirse a una Sala de Chat:**
+
+  - **URL:** `POST /chat/join`
+  - **Cuerpo de la Solicitud:**
+
+    ```json
+    {
+      "room": "nombre_de_la_sala"
+    }
+    ```
+
+- **Enviar Mensaje:**
+
+  - **URL:** `POST /chat/message`
+  - **Cuerpo de la Solicitud:**
+
+    ```json
+    {
+      "room": "nombre_de_la_sala",
+      "message": "contenido_del_mensaje"
+    }
+    ```
