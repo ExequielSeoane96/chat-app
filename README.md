@@ -1,5 +1,3 @@
-¡Por supuesto! Incluir un archivo `README.md` bien estructurado en tu repositorio de GitHub es fundamental para que otros desarrolladores comprendan y utilicen tu proyecto de manera efectiva. A continuación, te proporciono una guía y un ejemplo de cómo podrías estructurar tu `README.md` para tu aplicación de chat desarrollada con NestJS.
-
 ---
 
 # Chat-App
