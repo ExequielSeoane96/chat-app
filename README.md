@@ -39,14 +39,14 @@ Sigue estos pasos para configurar y ejecutar la aplicación en tu entorno local:
 1. **Clona este repositorio:**
 
    ```bash
-   git clone https://github.com/tu-usuario/chatapp-nestjs.git
+   https://github.com/ExequielSeoane96/chat-app.git
    ```
 
 
 2. **Accede al directorio del proyecto:**
 
    ```bash
-   cd chatapp-nestjs
+   cd chatapp
    ```
 
 
